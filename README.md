@@ -132,6 +132,14 @@ Basta dar duplo clique em `start_x_assistant.bat` ou executar no terminal:
 - **Abrir/Focar o Assistente:** Pressione **`Ctrl + Alt + X`** (ou `Ctrl + Shift + X`).
 - **Comando de Voz:** Mantenha pressionado **`Ctrl + Espaço`** para falar e solte para transcrever.
 
+### 6. Execução e Empacotamento Desktop com Tauri
+O projeto inclui suporte nativo ao **Tauri v2** configurado em `frontend/src-tauri`:
+```powershell
+cd frontend
+npm run tauri dev    # Executa a janela nativa desktop em modo de desenvolvimento
+npm run tauri build  # Gera o executável/instalador .exe de produção (requer Rust toolchain)
+```
+
 ---
 
 ## Testes Automatizados

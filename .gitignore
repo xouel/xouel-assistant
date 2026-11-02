@@ -25,6 +25,10 @@ frontend/dist/
 frontend/.vite/
 *.local
 
+# Tauri
+frontend/src-tauri/target/
+frontend/src-tauri/gen/schemas/
+
 # Logs e arquivos de sistema
 *.log
 .DS_Store
