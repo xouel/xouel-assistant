@@ -1,4 +1,4 @@
-# X-Assistant 🧠⚡
+# X-Assistant
 
 > **Windows Local AI Desktop Assistant & Developer Productivity Copilot**  
 > 100% Offline-first, Seguro e Otimizado para Hardware com Memória Flex Mode (Intel Core i3 12ª Ger / 20 GB RAM).
@@ -12,7 +12,7 @@
 
 ---
 
-## 🎯 Visão Geral
+## Visão Geral
 
 O **X-Assistant** é um assistente de produtividade desktop para Windows que roda **completamente local**, sem envio de dados ou telemetria para a nuvem. Ele combina modelos de linguagem (LLMs via Ollama), reconhecimento de voz com IA (Faster-Whisper), síntese de voz nativa (Windows SAPI5) e visão computacional multimodal em uma interface **Bento Box** moderna e responsiva.
 
@@ -20,35 +20,35 @@ Projetado especificamente para rodar com eficiência em hardware com restriçõe
 
 ---
 
-## ✨ Principais Funcionalidades
+## Principais Funcionalidades
 
-- **⚡ Roteamento Inteligente de Modelos (Triagem):**
+- **Roteamento Inteligente de Modelos (Triagem):**
   - `x-fast` (*Llama 3.2 3B*): Roteamento de comandos de sistema, conversas rápidas e triagem de intenções em milissegundos.
   - `x-coder` (*Qwen 2.5 Coder 7B*): Geração de código avançado, refatoração e resolução de bugs.
   - `x-vision` (*Moondream2 / Llama 3.2 Vision*): Análise multimodal direta da tela do usuário.
-- **🎙️ Voz Offline de Alta Velocidade:**
+- **Voz Offline de Alta Velocidade:**
   - **STT (Speech-to-Text):** Faster-Whisper local com ativação por Push-to-Talk (`Ctrl + Espaço` ou clique contínuo).
   - **TTS (Text-to-Speech):** Síntese nativa offline via Windows SAPI5 (`pyttsx3`), com zero overhead de latência ou consumo de VRAM.
-- **🛠️ Ferramentas de Produtividade para Desenvolvedores:**
+- **Ferramentas de Produtividade para Desenvolvedores:**
   - **Gerador de Git Commits:** Inspeciona `git diff --staged` ou `git diff` do repositório ativo e sugere mensagens no padrão Conventional Commits com 1 clique.
   - **Smart Clipboard:** Análise instantânea do conteúdo da área de transferência com ações contextuais (explicar código, formatar JSON, converter dados).
   - **Visão de Tela (Screen Vision):** Captura instantânea e análise contextual do que você está vendo.
   - **Gerenciador de Workspaces:** Alternância rápida entre diretórios de trabalho e projetos.
-- **🛡️ Segurança em Camadas (Defense-in-Depth):**
+- **Segurança em Camadas (Defense-in-Depth):**
   - Execução restrita por **Allowlist** (`os_executor.py`), proibindo comandos arbitrários e prevenindo shell injection (`shell=False` estrito).
   - **Confirmação em 2 Etapas:** Ações de risco (ex: formatar disco, mutações na allowlist ou comandos de terminal) exigem autorização explícita do usuário via interface.
   - **Autenticação Local por Token:** Comunicação REST e WebSockets protegida por token criptográfico (`secrets.token_hex`) único armazenado localmente.
   - **Trilha de Auditoria Imutável:** Todas as ações, confirmações e comandos são registrados com hash e timestamp em banco SQLite local (`assistant.db`).
-- **📊 Telemetria de Hardware em Tempo Real:**
+- **Telemetria de Hardware em Tempo Real:**
   - Medição de CPU e uso de memória de 20 GB com destaque visual para a **Zona Segura Dual-Channel** (até 8.5 GB a 128-bit vs Single-Channel acima disso).
   - Monitoramento do RSS do Ollama e botão de **Ejeção Imediata de RAM** para liberar a memória instantaneamente.
-- **🪟 Interface Flutuante & Atalho Global:**
+- **Interface Flutuante & Atalho Global:**
   - Inicialização em modo aplicativo leve (Edge Chromium App Mode) sem bordas de navegador.
   - Atalho global Win32: **`Ctrl + Alt + X`** (ou **`Ctrl + Shift + X`**) para invocar/ocultar a janela instantaneamente de qualquer lugar no Windows.
 
 ---
 
-## 🏗️ Arquitetura do Sistema
+## Arquitetura do Sistema
 
 ```text
 x-assistant/
@@ -83,7 +83,7 @@ x-assistant/
 
 ---
 
-## 🚀 Instalação e Uso Rápido
+## Instalação e Uso Rápido
 
 ### 1. Pré-requisitos
 - **Windows 10 ou 11 (64-bit)**
@@ -134,7 +134,7 @@ Basta dar duplo clique em `start_x_assistant.bat` ou executar no terminal:
 
 ---
 
-## 🧪 Testes Automatizados
+## Testes Automatizados
 
 O projeto possui **100% de aprovação** em sua suíte de 59 testes automatizados cobrindo segurança, banco de dados, allowlist, execução de SO, integração de voz, visão multimodal e telemetria:
 
@@ -145,13 +145,13 @@ cd backend
 
 ---
 
-## 📖 Documentação Detalhada
+## Documentação Detalhada
 
 Para uma visão aprofundada de todas as decisões arquiteturais, métricas de benchmark, especificações de endpoints, fluxos de segurança e lições aprendidas:
 - Consulte [docs/DOCUMENTACAO_COMPLETA.md](docs/DOCUMENTACAO_COMPLETA.md).
 
 ---
 
-## 📄 Licença
+## Licença
 
 Distribuído sob a licença MIT. Consulte `LICENSE` para mais informações.
