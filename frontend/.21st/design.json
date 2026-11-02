@@ -1,0 +1,20 @@
+{
+  "name": "X-Assistant",
+  "framework": "react-vite",
+  "styling": "tailwind-v4-shadcn",
+  "theme": "dark",
+  "palette": {
+    "background": "oklch(0.141 0.005 285.823)",
+    "card": "oklch(0.178 0.006 285.885)",
+    "primary": "oklch(0.765 0.177 163.223)",
+    "warning": "oklch(0.828 0.189 84.429)",
+    "destructive": "oklch(0.637 0.237 25.331)"
+  },
+  "decisions": [
+    "Single styling system: Tailwind v4 + shadcn/21st.dev tokens in src/index.css without MUI",
+    "Bento Box Dark layout optimized for Edge --app window and 1366x768 / 1920x1080 screens",
+    "Strict prefers-reduced-motion compliance and visible keyboard focus rings",
+    "Single mounted Sonner <Toaster theme='dark' richColors /> at root"
+  ]
+}
+

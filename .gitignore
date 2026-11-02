@@ -1,0 +1,31 @@
+# Python & Ambientes Virtuais
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Seguranca e Dados Locais do X-Assistant
+assistant.db
+*.db
+backend/.local_token
+backend/captures/
+captures/
+
+# Node & Front-end
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.local
+
+# Logs e arquivos de sistema
+*.log
+.DS_Store
+Thumbs.db

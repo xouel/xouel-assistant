@@ -1,0 +1,15 @@
+FROM qwen2.5:3b-instruct
+
+# Configuração de Threads validada no benchmark (2 P-Cores completos com HT)
+PARAMETER num_thread 4
+
+# Janela de contexto equilibrada (evita explosão de RAM no KV Cache)
+PARAMETER num_ctx 4096
+
+# Baixa temperatura para classificação estável e respostas concisas
+PARAMETER temperature 0.2
+
+SYSTEM """Você é o X-Assistant, um assistente local de alta produtividade para desenvolvedores e controle do sistema operacional Windows.
+Responda em português do Brasil (pt-BR) de forma direta, técnica e concisa.
+Quando solicitado a gerar formatos estruturados (JSON), classifique as intenções com rigor cirúrgico utilizando apenas as chaves cadastradas na Allowlist."""
+
